@@ -256,6 +256,13 @@ h2 {
     justify-content: left;
   }
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .calling a {
     margin-left: 100px
   }
@@ -357,6 +364,14 @@ h2 {
   .section-tittle {
     font-size: 14px;
     font-weight: 500;
+  }
+
+  .latest-news {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(4, 1fr);
+    margin-right: 15px;
+    margin-left: 15px;
+    max-width: 1152px;
   }
 
 
