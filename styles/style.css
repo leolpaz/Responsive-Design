@@ -8,7 +8,11 @@ body {
   color: #555;
 }
 
-.flexBetween {
+.flex {
+  display: flex;
+}
+
+.flex-between {
   display: flex;
   justify-content: space-between;
 }
@@ -16,21 +20,144 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-.buttomsWrap {
+.mobile-buttoms {
   width: 60px;
   margin-right: 15px;
+  align-self: center;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #000000;
   height: 50px;
+  width: 100px;
 }
 
 .logoImg {
   height: 30px;
+}
+
+.menus {
+  font-family: 'roboto', 'Courier New', Courier, monospace;
+  display: none;
+  width: 100%;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 32px;
+  background-color: #000;
+}
+
+.bottom-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+.menu-items,
+.menu-items2 {
+  margin-right: 10px;
+}
+
+.menu-items li {
+  margin-right: 9.5px;
+  margin-left: 9.5px;
+}
+
+.menu-items2 li {
+  margin-right: 9.5px;
+  margin-left: 9.5px;
+}
+
+.menu-items a {
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-items2 a {
+  font-size: 14px;
+  color: #A9A9B0;
+  text-decoration: none;
+}
+
+.calling {
+  display: flex;
+  background-color: #FFDD33;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.calling a {
+  font-family: 'roboto', 'Courier New', Courier, monospace;
+  color: #000;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+
+  nav {
+    display: flex;
+    justify-content: start;
+  }
+
+  .logo {
+    height: 80px;
+    width: 100px;
+  }
+
+  .menus {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .mobile-buttoms {
+    display: none;
+  }
+
+
+  .calling {
+    height: 30px;
+    justify-content: left;
+  }
+
+  .calling a {
+    margin-left: 100px
+  }
+}
+
+@media only screen and (min-width: 1065px) {
+  nav {
+    height: 80px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menu-items,
+  .menu-items2 {
+    margin-left: 10px;
+  }
+
+  .calling a {
+    margin-left: 20px
+  }
+
+
 }
