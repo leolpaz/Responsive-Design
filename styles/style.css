@@ -108,6 +108,77 @@ nav {
   font-weight: 300;
 }
 
+.top-news {
+  display: grid;
+  grid-template-areas:
+    "top-news1"
+    "top-news2"
+    "top-news3";
+    height: auto;
+  grid-gap: 10px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.top-news1 {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: end;
+  font-family: 'roboto', 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 900;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/bgtopnews1.webp), center;
+  background-size: cover;
+  grid-area: top-news1;
+}
+
+.news-logo {
+  display: none;
+}
+
+.tn-author {
+  font-size: 12px;
+  font-weight: 400;
+  color: #999999;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tittle,
+.tn-author {
+  margin-left: 10px
+}
+
+.top-news2 {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: end;
+  font-family: 'roboto', 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 900;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/bgtopnews2.jpg) center;
+  background-size: cover;
+  grid-area: top-news2;
+}
+
+.top-news3 {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: end;
+  font-family: 'roboto', 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 900;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/bgtopnews3.webp) center;
+  background-size: cover;
+  grid-area: top-news3;
+}
+
 @media only screen and (min-width: 768px) {
 
   nav {
@@ -139,6 +210,17 @@ nav {
   .calling a {
     margin-left: 100px
   }
+
+  .top-news {
+    grid-template-areas:
+      "top-news1 top-news1 top-news2"
+      "top-news1 top-news1 top-news2"
+      "top-news1 top-news1 top-news3"
+      "top-news1 top-news1 top-news3";
+      min-width: 100%;
+      min-height: 50vh;
+  }
+  
 }
 
 @media only screen and (min-width: 1065px) {
@@ -159,5 +241,29 @@ nav {
     margin-left: 20px
   }
 
+  .news-logo {
+    display: flex;
+    height: 100%;
+    background-image: url(../assets/cover-gradient.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+  }
+
+  .news-logo img {
+    height: 25%;
+    margin-top: 15px;
+  }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .top-news1,
+  .top-news2,
+  .top-news3 {
+    height: 28vh;
+  }
 
 }
