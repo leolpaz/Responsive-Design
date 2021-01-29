@@ -4,11 +4,11 @@
 
 # Responsive Design
 
-> On this project I made a responsive copy of the new web home page
+> On this project I made a responsive copy of The New Web home page
 
 ![screenshot](https://github.com/leolpaz/Responsive-Design/blob/features2/app_screenshot.png)
 
-I made a copy of the new web homepage keeping it responsive for different screen sizes
+I made a copy of The New Web homepage keeping it responsive for different screen sizes
 
 ## Live Demo
 
