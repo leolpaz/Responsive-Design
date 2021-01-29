@@ -6,7 +6,7 @@
 
 > On this project I made a responsive copy of the new web home page
 
-![screenshot](https://raw.githubusercontent.com/leolpaz/Smashing-Magazine-Heatmap/features/app_screenshot.png)
+![screenshot](https://github.com/leolpaz/Responsive-Design/blob/features2/app_screenshot.png)
 
 I made a copy of the new web homepage keeping it responsive for different screen sizes
 
