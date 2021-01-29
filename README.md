@@ -4,7 +4,7 @@
 
 # Responsive Design
 
-> On this project I made a responsive copy of The New Web home page
+> In this project I made a responsive copy of The New Web home page
 
 ![screenshot](https://github.com/leolpaz/Responsive-Design/blob/features2/app_screenshot.png)
 
