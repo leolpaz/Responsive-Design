@@ -548,6 +548,80 @@ h5 {
   font-size: 14px;
 }
 
+.socials-and-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 160.5px;
+  background-color: #000;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px;
+  height: 48.5px;
+  gap: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.icon:hover{
+  border: 1px solid #333;
+  background-color: #131313;
+  cursor: pointer;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  gap: 15px;
+  color: #fff;
+}
+
+.credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 123.5px;
+  background-color: #000;
+}
+
+.legal1 {
+  height: 16px;
+  width: 37px;
+  margin-right: 3px;
+}
+
+.legal2 {
+  height: 9px;
+  width: 65px;
+  margin-left: 3px;
+}
+
+.legal-mobile {
+  text-align: center;
+}
+
+.non-mobile {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
 
   .main-menu {
@@ -691,6 +765,14 @@ h5 {
   .deal {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .legal-mobile {
+    display: none;
+  }
+
+  .non-mobile {
+    display: flex;
   }
 
 }
