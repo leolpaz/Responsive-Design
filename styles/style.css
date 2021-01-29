@@ -8,6 +8,12 @@ body {
   color: #555;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
 .flex {
   display: flex;
 }
@@ -17,9 +23,15 @@ body {
   justify-content: space-between;
 }
 
-nav {
+.nav {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.main-menu {
   display: flex;
   justify-content: space-between;
+  background-color: #fff;
 }
 
 .mobile-buttoms {
@@ -61,6 +73,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 48px;
+  background-color: #FFFFFF;
 }
 
 .menu-items,
@@ -97,6 +110,7 @@ nav {
   align-items: center;
   height: 60px;
   width: 100%;
+  position: sticky;
 }
 
 .calling a {
@@ -334,7 +348,7 @@ h4 {
 
 @media only screen and (min-width: 768px) {
 
-  nav {
+  .main-menu {
     display: flex;
     justify-content: start;
   }
@@ -449,7 +463,7 @@ h4 {
 }
 
 @media only screen and (min-width: 1065px) {
-  nav {
+  .main-menu {
     height: 80px;
   }
 
