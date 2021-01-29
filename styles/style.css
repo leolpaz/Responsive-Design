@@ -390,6 +390,7 @@ h4:hover {
   flex-direction: column;
   color: #fff;
   justify-content: flex-end;
+  max-height: 80%;
 }
 
 .assorted-main:hover {
