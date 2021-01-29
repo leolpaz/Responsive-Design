@@ -346,6 +346,79 @@ h4 {
   margin-top: 6px;
 }
 
+.assorted-news {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.assorted {
+  display: grid;
+  grid-template-rows: 0.2fr 4fr 0.5fr 1fr;
+  row-gap: 10px;
+  margin-bottom: 35px;
+}
+
+.assorted-main {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: flex-end;
+}
+
+.assorted-tittle {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.assorted1 {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 50)),
+    url(../assets/gamestop.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.in-title {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: red;
+  line-height: 17.5px;
+  font-size: 14px;
+  font-weight: 700;
+  flex-grow: 2;
+  margin-left: 10px;
+}
+
+.remaining {
+  list-style-type: circle;
+  color: red;
+  margin-left: 25px;
+}
+
+.remaining p {
+  color: #000;
+  padding-top: 10px;
+}
+
+h5 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+
+
+
+.image-news {
+  display: flex;
+  justify-content: space-between;
+}
+
+.related-image img {
+  height: 95px;
+  width: 95px;
+  max-height: 95px;
+  max-width: 95px;
+}
+
 @media only screen and (min-width: 768px) {
 
   .main-menu {
