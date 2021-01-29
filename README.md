@@ -12,7 +12,7 @@ I made a copy of The New Web homepage keeping it responsive for different screen
 
 ## Live Demo
 
-- [Visit Page](https://raw.githack.com/leolpaz/responsive-design/features/index.html)
+- [Visit Page](https://raw.githack.com/leolpaz/responsive-design/features2/index.html)
 
 ## Built With
 
