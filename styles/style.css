@@ -192,8 +192,13 @@ nav {
   grid-area: top-news3;
 }
 
-.transition1 {
-  margin: 50px 15px;
+.first-header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.transition {
+  margin-left: 15px;
 }
 
 .latest-news {
@@ -202,6 +207,7 @@ nav {
   row-gap: 10px;
   margin-right: 15px;
   margin-left: 15px;
+  margin-bottom: 50px;
 }
 
 .latest {
@@ -226,6 +232,20 @@ h2 {
   font-family: 'roboto', 'Courier New', Courier, monospace;
   font-size: 28px;
   color: #FF4422;
+  font-weight: 700;
+}
+
+.financial-list {
+  font-family: 'roboto', 'Courier New', Courier, monospace;
+  font-size: 14px;
+  color: #FF4422;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;,
+}
+
+.financial-list li {
+  margin-top: 15px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -256,13 +276,6 @@ h2 {
     justify-content: left;
   }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
   .calling a {
     margin-left: 100px
   }
@@ -285,6 +298,7 @@ h2 {
     column-gap: 20px;
     margin-right: 15px;
     margin-left: 15px;
+    max-height: 100%;
   }
 
   .latest {
@@ -311,6 +325,27 @@ h2 {
     font-size: 14px;
     font-weight: 500;
   }
+
+  .transition {
+    align-self: flex-start;
+  }
+
+  .financial-list {
+    display: flex;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  .financial-list li {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .financial-list .borders {
+    border-right: 1px solid red;
+    border-left: 1px solid red;
+  }
+
   
 }
 
@@ -372,6 +407,33 @@ h2 {
     margin-right: 15px;
     margin-left: 15px;
     max-width: 1152px;
+    max-height: 100%;
+  }
+
+  .transition {
+    align-self: flex-start;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1152px;
+    margin: 0 auto;
+  }
+
+  .large-screen-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .financial-list {
+    flex-direction: row-reverse;
+    margin: 0;
+    align-self: center;
+  }
+
+  .financial-list li {
+    margin: 0;
   }
 
 
