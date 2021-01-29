@@ -4,15 +4,15 @@
 
 # Responsive Design
 
-> On this project I made a responsive copy of the new web home page
+> In this project I made a responsive copy of The New Web home page
 
-![screenshot](https://raw.githubusercontent.com/leolpaz/Smashing-Magazine-Heatmap/features/app_screenshot.png)
+![screenshot](https://github.com/leolpaz/Responsive-Design/blob/features2/app_screenshot.png)
 
-I made a copy of the new web homepage keeping it responsive for different screen sizes
+I made a copy of The New Web homepage keeping it responsive for different screen sizes
 
 ## Live Demo
 
-- [Visit Page](https://raw.githack.com/leolpaz/responsive-design/features/index.html)
+- [Visit Page](https://raw.githack.com/leolpaz/responsive-design/features2/index.html)
 
 ## Built With
 
