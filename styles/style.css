@@ -483,8 +483,6 @@ h5 {
   font-size: 13px;
 }
 
-
-
 .image-news {
   display: flex;
   justify-content: space-between;
@@ -495,6 +493,59 @@ h5 {
   width: 95px;
   max-height: 95px;
   max-width: 95px;
+}
+
+.latest-deals {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.deals {
+  display: flex;
+  justify-content: space-between;
+  color: red;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+.deal-list {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  row-gap: 10px;
+}
+
+.deal {
+  display: flex;
+  gap: 10px;
+}
+
+.deal img {
+  max-width: 75px;
+  max-height: 75px;
+  min-height: 75px;
+}
+
+.name {
+  font-family: "roboto", Verdana,  Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.name-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-price span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #AAAAAA;
+  text-decoration: line-through;
+}
+
+.price {
+  font-size: 14px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -626,6 +677,21 @@ h5 {
     margin-left: 5px;
   }
 
+  .deal-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+  }
+
+  .deal img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .deal {
+    flex-direction: column;
+    gap: 20px;
+  }
 
 }
 
@@ -745,6 +811,17 @@ h5 {
   .remaining {
     margin-left: 15px;
   }
+
+  .deal-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+
 
 
 }
