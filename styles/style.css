@@ -14,6 +14,8 @@ header {
   z-index: 10;
 }
 
+
+
 .flex {
   display: flex;
 }
@@ -122,6 +124,10 @@ header {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis
+}
+
+.box {
+  height: 120px;
 }
 
 .top-news {
@@ -379,6 +385,78 @@ h4 {
   background-position: 50% 50%;
 }
 
+.assorted2 {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 50)),
+    url(../assets/apps.webp) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.assorted3 {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 50)),
+    url(../assets/gear.webp) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.assorted4 {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 50)),
+    url(../assets/tech.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.assorted5 {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 50)),
+    url(../assets/creative.webp) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.assorted6 {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 50)),
+    url(../assets/podium.webp) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.assorted7 {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 50)),
+    url(../assets/insight.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.assorted8 {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 50)),
+    url(../assets/launch.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.assorted9 {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 50)),
+    url(../assets/distract.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 .in-title {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: red;
@@ -532,6 +610,22 @@ h5 {
     height: 80px
   }
 
+  .assorted-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  .assorted {
+    grid-template-rows: 0.2fr 2fr 0.5fr 1fr;
+  }
+
+  .remaining {
+    margin-left: 5px;
+  }
+
 
 }
 
@@ -635,6 +729,20 @@ h5 {
     height: 300px;
     row-gap: 10px;
     margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .assorted-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+  }
+
+  .assorted {
+    grid-template-rows: 0.2fr 1fr 0.5fr 1fr;
+  }
+
+  .remaining {
     margin-left: 15px;
   }
 
