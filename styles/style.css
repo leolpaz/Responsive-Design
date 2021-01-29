@@ -241,11 +241,67 @@ h2 {
   color: #FF4422;
   margin-left: 15px;
   margin-top: 15px;
-  margin-bottom: 10px;,
+  margin-bottom: 10px;
 }
 
 .financial-list li {
   margin-top: 15px;
+}
+
+.investment4 {
+  display: none;
+}
+
+.investment {
+  display: grid;
+  grid-template-rows: 3fr 2fr 1fr;
+  height: 200px;
+  row-gap: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.company-image {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #FF4422;
+  background-clip: padding-box;
+  padding-left: 95px;
+  height: 45px;
+  padding-top: 14px;
+  width: auto;
+
+}
+
+.main-square {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.financial-info {
+  padding-left: 95px;  
+}
+
+.company-info,
+.company-news {
+  margin-left: 25px;
+}
+
+.company-info {
+  display: grid;
+  border-bottom: 1px solid #FFCDC2;
 }
 
 @media only screen and (min-width: 768px) {
