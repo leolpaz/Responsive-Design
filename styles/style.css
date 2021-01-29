@@ -116,7 +116,7 @@ nav {
     "top-news1"
     "top-news2"
     "top-news3";
-    height: auto;
+  height: auto;
   grid-gap: 10px;
   margin-right: 8px;
   margin-left: 8px;
@@ -255,7 +255,7 @@ h2 {
 .investment {
   display: grid;
   grid-template-rows: 3fr 2fr 1fr;
-  height: 200px;
+  height: 240px;
   row-gap: 10px;
   margin-right: 15px;
   margin-left: 15px;
@@ -291,17 +291,45 @@ h4 {
 }
 
 .financial-info {
-  padding-left: 95px;  
+  padding-left: 95px;
 }
 
 .company-info,
 .company-news {
+  font-size: 14px;
+  font-weight: 400;
   margin-left: 25px;
 }
 
 .company-info {
   display: grid;
   border-bottom: 1px solid #FFCDC2;
+}
+
+.company-news span {
+  color: #aaaaaa;
+}
+
+.company-info span {
+  margin-right: 8px;
+}
+
+
+
+.value {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+
+}
+
+.classification {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  margin-top: 6px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -342,8 +370,8 @@ h4 {
       "top-news1 top-news1 top-news2"
       "top-news1 top-news1 top-news3"
       "top-news1 top-news1 top-news3";
-      min-width: 90%;
-      min-height: 50vh;
+    min-width: 90%;
+    min-height: 50vh;
   }
 
   .latest-news {
@@ -362,7 +390,7 @@ h4 {
     grid-template-columns: none;
   }
 
-  .latest .img img {  
+  .latest .img img {
     height: 100%;
     width: 100%;
   }
@@ -372,11 +400,11 @@ h4 {
     font-size: 20px;
     font-weight: 700;
   }
-  
+
   .bottom-tittle {
     font-size: 40px;
   }
-  
+
   .section-tittle {
     font-size: 14px;
     font-weight: 500;
@@ -402,7 +430,22 @@ h4 {
     border-left: 1px solid red;
   }
 
-  
+  .investments {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    height: 300px;
+  }
+
+  .investment {
+    height: 300px;
+  }
+
+  .company-news {
+    height: 80px
+  }
+
+
 }
 
 @media only screen and (min-width: 1065px) {
@@ -447,11 +490,11 @@ h4 {
     font-size: 28px;
     font-weight: 700;
   }
-  
+
   .bottom-tittle {
     font-size: 56px;
   }
-  
+
   .section-tittle {
     font-size: 14px;
     font-weight: 500;
@@ -490,6 +533,22 @@ h4 {
 
   .financial-list li {
     margin: 0;
+  }
+
+  .investments {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+    margin-top: 10px;
+  }
+
+  .investment4 {
+    display: grid;
+    grid-template-rows: 3fr 2fr 1fr;
+    height: 300px;
+    row-gap: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 
 
