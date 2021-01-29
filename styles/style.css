@@ -14,8 +14,6 @@ header {
   z-index: 10;
 }
 
-
-
 .flex {
   display: flex;
 }
@@ -46,7 +44,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000000;
+  background-color: #000;
   height: 50px;
   width: 100px;
 }
@@ -75,7 +73,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 48px;
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 
 .menu-items,
@@ -101,13 +99,13 @@ header {
 
 .menu-items2 a {
   font-size: 14px;
-  color: #A9A9B0;
+  color: #a9a9b0;
   text-decoration: none;
 }
 
 .calling {
   display: flex;
-  background-color: #FFDD33;
+  background-color: #fd3;
   justify-content: center;
   align-items: center;
   height: 60px;
@@ -123,7 +121,7 @@ header {
   font-weight: 300;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis
+  text-overflow: ellipsis;
 }
 
 .box {
@@ -150,8 +148,10 @@ header {
   font-family: 'roboto', 'Courier New', Courier, monospace;
   font-size: 20px;
   font-weight: 900;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../assets/bgtopnews1.webp), center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/bgtopnews1.webp),
+    center;
   background-size: cover;
   grid-area: top-news1;
 }
@@ -160,12 +160,21 @@ header {
   display: none;
 }
 
+.tittle,
+.author {
+  margin-left: 10px;
+}
+
 .author {
   font-size: 12px;
   font-weight: 400;
-  color: #999999;
+  color: #999;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.author:hover {
+  cursor: default;
 }
 
 .tittle {
@@ -179,11 +188,6 @@ header {
   font-weight: 500;
 }
 
-.tittle,
-.author {
-  margin-left: 10px
-}
-
 .top-news2 {
   display: flex;
   color: white;
@@ -192,7 +196,8 @@ header {
   font-family: 'roboto', 'Courier New', Courier, monospace;
   font-size: 20px;
   font-weight: 900;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../assets/bgtopnews2.jpg) center;
   background-size: cover;
   grid-area: top-news2;
@@ -206,10 +211,17 @@ header {
   font-family: 'roboto', 'Courier New', Courier, monospace;
   font-size: 20px;
   font-weight: 900;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../assets/bgtopnews3.webp) center;
   background-size: cover;
   grid-area: top-news3;
+}
+
+.top-news1,
+.top-news2,
+.top-news3:hover {
+  cursor: pointer;
 }
 
 .first-header {
@@ -236,6 +248,10 @@ header {
   gap: 10px;
 }
 
+.latest:hover {
+  cursor: pointer;
+}
+
 .latest-tittle {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -243,7 +259,7 @@ header {
   margin-left: 10px;
 }
 
-.latest .img img {
+.img img {
   max-width: 100%;
   height: 75px;
 }
@@ -251,14 +267,19 @@ header {
 h2 {
   font-family: 'roboto', 'Courier New', Courier, monospace;
   font-size: 28px;
-  color: #FF4422;
+  color: #f42;
   font-weight: 700;
+}
+
+h2:hover {
+  cursor: pointer;
+  color: #000;
 }
 
 .financial-list {
   font-family: 'roboto', 'Courier New', Courier, monospace;
   font-size: 14px;
-  color: #FF4422;
+  color: #f42;
   margin-left: 15px;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -294,13 +315,16 @@ h4 {
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  background-color: #FF4422;
+  background-color: #f42;
   background-clip: padding-box;
   padding-left: 95px;
   height: 45px;
   padding-top: 14px;
   width: auto;
+}
 
+h4:hover {
+  cursor: pointer;
 }
 
 .main-square {
@@ -323,25 +347,22 @@ h4 {
 
 .company-info {
   display: grid;
-  border-bottom: 1px solid #FFCDC2;
+  border-bottom: 1px solid #ffcdc2;
 }
 
 .company-news span {
-  color: #aaaaaa;
+  color: #aaa;
 }
 
 .company-info span {
   margin-right: 8px;
 }
 
-
-
 .value {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 700;
   margin-top: 10px;
-
 }
 
 .classification {
@@ -369,6 +390,10 @@ h4 {
   flex-direction: column;
   color: #fff;
   justify-content: flex-end;
+}
+
+.assorted-main:hover {
+  cursor: pointer;
 }
 
 .assorted-tittle {
@@ -474,8 +499,15 @@ h4 {
 }
 
 .remaining p {
-  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  color: #555;
   padding-top: 10px;
+}
+
+.remaining p:hover {
+  cursor: pointer;
+  color: #000;
 }
 
 h5 {
@@ -486,6 +518,10 @@ h5 {
 .image-news {
   display: flex;
   justify-content: space-between;
+}
+
+.image-news:hover {
+  cursor: pointer;
 }
 
 .related-image img {
@@ -508,6 +544,11 @@ h5 {
   margin-bottom: 20px;
 }
 
+.deals:hover {
+  cursor: pointer;
+  color: #000;
+}
+
 .deal-list {
   display: grid;
   grid-template-rows: repeat(8, 1fr);
@@ -523,13 +564,19 @@ h5 {
   max-width: 75px;
   max-height: 75px;
   min-height: 75px;
+  cursor: pointer;
 }
 
 .name {
-  font-family: "roboto", Verdana,  Tahoma, sans-serif;
+  font-family: "roboto", Verdana, Tahoma, sans-serif;
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 10px;
+}
+
+.name:hover {
+  cursor: pointer;
+  color: #f42;
 }
 
 .name-price {
@@ -540,7 +587,7 @@ h5 {
 .name-price span {
   font-size: 12px;
   font-weight: 400;
-  color: #AAAAAA;
+  color: #aaa;
   text-decoration: line-through;
 }
 
@@ -577,7 +624,7 @@ h5 {
   width: 40px;
 }
 
-.icon:hover{
+.icon:hover {
   border: 1px solid #333;
   background-color: #131313;
   cursor: pointer;
@@ -591,6 +638,11 @@ h5 {
   font-size: 13px;
   font-weight: 500;
   gap: 15px;
+  color: #aaa;
+}
+
+.contacts div:hover {
+  cursor: pointer;
   color: #fff;
 }
 
@@ -600,6 +652,10 @@ h5 {
   align-items: center;
   height: 123.5px;
   background-color: #000;
+}
+
+.credits:hover {
+  cursor: pointer;
 }
 
 .legal1 {
@@ -622,8 +678,11 @@ h5 {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+footer {
+  margin-top: 25px;
+}
 
+@media only screen and (min-width: 768px) {
   .main-menu {
     display: flex;
     justify-content: start;
@@ -644,14 +703,13 @@ h5 {
     display: none;
   }
 
-
   .calling {
     height: 30px;
     justify-content: left;
   }
 
   .calling a {
-    margin-left: 100px
+    margin-left: 100px;
   }
 
   .top-news {
@@ -667,7 +725,6 @@ h5 {
   .latest-news {
     grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(3, 1fr);
-    max-height: 90vh;
     row-gap: 10px;
     column-gap: 20px;
     margin-right: 15px;
@@ -680,7 +737,7 @@ h5 {
     grid-template-columns: none;
   }
 
-  .latest .img img {
+  .img img {
     height: 100%;
     width: 100%;
   }
@@ -731,8 +788,12 @@ h5 {
     height: 300px;
   }
 
+  .investment:hover {
+    cursor: pointer;
+  }
+
   .company-news {
-    height: 80px
+    height: 80px;
   }
 
   .assorted-news {
@@ -774,7 +835,6 @@ h5 {
   .non-mobile {
     display: flex;
   }
-
 }
 
 @media only screen and (min-width: 1065px) {
@@ -792,7 +852,7 @@ h5 {
   }
 
   .calling a {
-    margin-left: 20px
+    margin-left: 20px;
   }
 
   .news-logo {
@@ -864,6 +924,11 @@ h5 {
     margin: 0;
   }
 
+  .financial-list li:hover {
+    cursor: pointer;
+    color: #000;
+  }
+
   .investments {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -890,6 +955,11 @@ h5 {
     grid-template-rows: 0.2fr 1fr 0.5fr 1fr;
   }
 
+  .assorted-tittle:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
   .remaining {
     margin-left: 15px;
   }
@@ -902,18 +972,12 @@ h5 {
   .name {
     font-size: 16px;
   }
-
-
-
-
 }
 
 @media only screen and (max-width: 768px) {
-
   .top-news1,
   .top-news2,
   .top-news3 {
     height: 28vh;
   }
-
 }
