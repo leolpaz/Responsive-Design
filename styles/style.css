@@ -561,6 +561,10 @@ h5 {
   gap: 10px;
 }
 
+.ribbon {
+  display: none;
+}
+
 .deal img {
   max-width: 75px;
   max-height: 75px;
@@ -832,6 +836,16 @@ footer {
   .deal {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .deal-img {
+    position: relative;
+  }
+
+  .ribbon {
+    display: block;
+    position: absolute;
+    right: 0;
   }
 
   .legal-mobile {
